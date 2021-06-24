@@ -16,3 +16,20 @@
 <!-- 🐨 Append the div to the root div using `append` -->
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+<body>
+    <div id="root"></div>
+    <script type="module">
+        // Define some elements.
+        const rootElement = document.createElement('div');
+        const containerElement = document.createElement('div');
+
+        // Describe and insert root element.
+        rootElement.setAttribute('id', 'root');
+        document.body.append(rootElement);
+
+        // Describe and insert the container.
+        containerElement.textContent = 'Hello, World.';
+        containerElement.className = 'container';
+        rootElement.append(containerElement);
+    </script>
+</body>
